@@ -422,6 +422,7 @@ h2::before {
 }
 
 
+
 @media screen and (max-width: 616px) {
     .container_cv {
         display: flex!important;
