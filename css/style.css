@@ -1,0 +1,441 @@
+/* fonts
+font-family: 'Montserrat', sans-serif; 
+font-family: 'Calibri', sans-serif;*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:cadetblue;
+    font-size: 14px;
+    position: relative;
+    z-index: 8888;
+}
+
+
+h2 {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.container_cv {
+    max-width: 650px;
+    min-height: 850px;
+    background: linear-gradient(to top, #E025CE, #0338F4);
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_me {
+    max-width: 296px;
+    min-height: 830px;
+    background-color: rgba(196, 196, 196, .3);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.education_and_skill {
+    max-width: 321px;
+    min-height: 830px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.about_me_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.my_foto {
+    background-image: url('../img/DSC_0271.JPG');
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+}
+
+.name {
+    font-family: Montserrat;
+    font-size: 1.8em;
+    font-weight: 400;
+    color: #CECACA;
+    margin-bottom: 5px;
+}
+
+.surname {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 2.8em;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.specialty {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #CECACA;
+}
+
+.cotacts_me {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.cotacts_me > li {
+    background: rgba(196, 196, 196, 0.35);
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 5px;
+    padding-left: 70px;
+    position: relative;
+    list-style: none;
+}
+
+.cotacts_me > li > a {
+    font-family: 'Calibri', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+.email::before {
+    content: '';
+    background: url('../img/mail.svg') no-repeat;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 20px;
+    height: 16px;
+}
+
+.tel::before {
+    content: '';
+    background: url('../img/tel.svg') no-repeat;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+.location::before {
+    content: '';
+    background: url('../img/location.svg') no-repeat;
+    position: absolute;
+    top: 10px;
+    left: 13px;
+    width: 14px;
+    height: 20px;
+}
+
+.site::before {
+    content: '';
+    background: url('../img/site.svg') no-repeat;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    width: 23px;
+    height: 23px;
+}
+
+.bg_container {
+    background: rgba(196, 196, 196, 0.35);
+    border-radius: 10px;
+    padding: 14px;
+    padding-left: 30px;
+    margin-top: 13px;
+}
+
+.bg_container > h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.list_knowledge > li {
+    font-family: 'Calibri', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+.list__languages > .lang > li {
+    font-family: 'Calibri', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #ffffff;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.list__languages {
+    display: flex;
+}
+
+.list__languages >  .flex_dots {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 5px;
+}
+
+.list__languages >  .flex_dots > .dots > div{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(84, 84, 84, 0.6);    
+    margin-left: 4px;
+    margin-top: 5px;
+}
+
+.list__languages > .flex_dots > .dots {
+    display: flex;
+}
+
+.dot_russian:nth-child(1n + 1) {
+    background-color:#CECACA!important;
+}
+
+.dot_english:nth-child(1n + 1) {
+    background-color:#CECACA!important;
+}
+
+.dot_italian:nth-child(1n + 1) {
+    background-color:#CECACA!important;
+}
+
+.lang {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list__Social > li {
+    list-style: none;
+}
+
+.list__Social > li > a {
+    font-family: 'Calibri', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+.bg_container_for_hobbies {
+    background: rgba(196, 196, 196, 0.35);
+    border-radius: 10px;
+    padding: 8px 30px 8px 30px;
+    margin-top: 13px;
+    width: 45%;
+}
+
+.bg_container_for_hobbies  > h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    
+}
+
+.list_hobbies {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.list_hobbies > li {
+    list-style: none;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 12px;
+    color: #E5E5E5;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.about_experiense {
+    margin-top: 12px;
+}
+
+h2 {
+    padding: 3px 30px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 18px;
+    color: #FFFFFF;
+    background-color: #545454;
+    border-radius: 5px;
+    text-transform: uppercase;
+    width: 170px;
+    position: relative;
+    margin-top: 20px;
+}
+
+h2::before {
+    content: '';
+    width: 90%;
+    border-top: 2px solid #545454;
+    position: absolute;
+    top: 10px;
+    left: 140px;
+}
+
+.company {
+    font-family: Calibri;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    color: #343434;
+    line-height: 18px;
+}
+
+.position {
+    font-family: Calibri;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.9em;
+    color: #343434;
+    line-height: 18px;
+}
+
+.period {
+    font-family: Calibri;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8em;
+    color: #73808D;
+    line-height: 18px;
+}
+
+.what_do {
+    font-family: Calibri;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.85em;  
+    line-height: 14px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.experiense_education {
+    margin-top: 15px;
+}
+
+.my_skills {
+    margin-top: 15px;
+}
+
+.list_skil {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.list_skil > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 0 0 20px;
+} 
+
+.list_skil > div > p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 18px;
+    color: #545454;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.svg_skills {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(196, 196, 196, 0.4);
+    position: relative;
+    border-radius: 50%;
+}
+
+.svg_skills > svg {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+}
+
+.other_skills {
+    width: 100%;
+}
+
+.border {
+    padding: 3px;
+    border: 3px solid #3B5999;
+    border-radius: 50%;
+}
+
+.git_svg {
+    position: absolute;
+    top: 7px!important;
+    right: 8px!important;
+}
+
+.js > p {
+    text-align: center;
+}
+
+.github_svg {
+    position: absolute;
+    top: 0px!important;
+    right: 0px!important;
+}
+
+.other_skills > div > div {
+    margin: 30px 0 0 20px;
+}
+
+
+@media screen and (max-width: 616px) {
+    .container_cv {
+        display: flex!important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about_me {
+        min-width: 310px;
+    }
+
+    .education_and_skill {
+        min-width: 310px;
+        margin-top: 15px;
+    }
+}
